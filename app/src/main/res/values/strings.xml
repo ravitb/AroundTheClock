@@ -4,6 +4,12 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
-<!-- TODO: Remove or change this placeholder text -->
     <string name="workday_title">Work work work..</string>
+
+    <string name="set_time">Set Time</string>
+    <string name="pick_start_time">Start Workday</string>
+    <string name="pick_end_time">End Workday</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

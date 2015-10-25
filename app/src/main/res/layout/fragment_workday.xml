@@ -9,7 +9,35 @@
         android:id="@+id/workday_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/workday_title"/>
+        android:text="@string/workday_title"
+        android:textSize="30dp"
+        style="?android:listSeparatorTextViewStyle"/>
 
+    <Button
+        android:id="@+id/start_workday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pick_start_time"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="30dp"
+        android:background="#00b22d"/>
 
+    <Button
+        android:id="@+id/end_workday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pick_end_time"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:padding="30dp"
+        android:background="#ff4f4f"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        />
 </LinearLayout>

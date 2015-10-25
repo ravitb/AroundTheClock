@@ -1,16 +1,16 @@
 package com.ravit.android.aroundtheclock;
 
+import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class WorkdayActivity extends AppCompatActivity {
+public class WorkdayActivity extends Activity {
 
     private static final String TAG = "WorkdayActivity";
     private static final String KEY_CURRENT_DATE = "current_date";
@@ -28,14 +28,22 @@ public class WorkdayActivity extends AppCompatActivity {
         return currentDate;
     }
 
+/*
+    public void onTimeSelected(WorkdayFragment.EntryType type) {
+        int stam = 6;
+        DialogFragment newFragment = new TimePickerFragment();
+        newFragment.show(getFragmentManager(),"TimePicker");
+    }
+*/
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_workday);
 
-        FragmentManager fm = getSupportFragmentManager();
+        FragmentManager fm = getFragmentManager();
         Fragment fragment = fm.findFragmentById(R.id.fragmentContainer);
-        mCurrentDate = getCurrentDate(2005, 10, 1);
+        mCurrentDate = getCurrentDate(2003, 10, 1);
         mFormatter = new SimpleDateFormat("dd.MM.yyyy");
 
         if (fragment == null) {
